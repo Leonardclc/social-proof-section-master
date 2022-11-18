@@ -1,0 +1,265 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  * {
+    margin: 0;
+  }
+
+  html, body {
+    height: 100%;
+  }
+
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+
+  input, button, textarea, select {
+    font: inherit;
+  }
+
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  body {
+    background-color:  hsl(0, 0%, 98%);
+    font-family: 'League Spartan', sans-serif;
+    font-size: 1rem;
+  }
+
+  body > img {
+    position: fixed;
+    width: 800px;
+    opacity: 30%;
+  }
+
+  .container {
+    display: grid;
+    justify-content: center;
+    padding-top: 150px;
+  }
+
+  h1 {
+    width: 400px;
+    font-size: 3rem;
+    line-height: 50px;
+  }
+
+  .container > p {
+    width: 430px;    
+    font-size: 1.1rem;
+    padding-top: 25px;
+    color: hsl(303, 10%, 53%);
+    font-weight: 500;
+  }
+
+  .reviews-rated {
+    display: grid;
+    justify-content: right;
+    position: relative;
+    bottom: 200px;
+    gap: 20px;
+  }
+
+  .review-rated-1 {
+    background-color:hsl(300, 24%, 96%);
+    border-radius: 7px;
+    width: 400px;
+    height: 50px;
+    padding: 13px;
+    position: relative;
+    right: 120px;
+  }
+
+  .review-rated-2 {
+    background-color:hsl(300, 24%, 96%);
+    border-radius: 7px;
+    width: 400px;
+    height: 50px;
+    padding: 13px;
+    position: relative;
+    right: 65px;
+  }
+
+  .review-rated-3 {
+    background-color:hsl(300, 24%, 96%);
+    border-radius: 7px;
+    width: 400px;
+    height: 50px;
+    padding: 13px;
+  }
+
+  .review-rated-p {
+    position: relative;
+    left: 20px;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+  }
+
+  .reviews-desc {
+    grid-template-columns: 0fr 0fr 0fr;
+    display: grid;
+    gap: 50px;
+    color: white;
+  }
+
+  .review-desc-1 {
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 7px;
+    width: 350px;
+    height: 250px;
+    padding: 30px;
+    position: relative;
+    bottom: 100px;
+  }
+
+  .review-desc-2 {
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 7px;
+    width: 350px;
+    height: 250px;
+    padding: 30px;
+    position: relative;
+    bottom: 80px;
+  }
+
+  .review-desc-3 {
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 7px;
+    width: 350px;
+    height: 250px;
+    padding: 30px;
+    position: relative;
+    bottom: 60px;
+  }
+
+  .review-desc-img {
+    border-radius: 50px;
+    height: 50px;
+  }
+
+  .reviews-desc h2 {
+    position: relative;
+    left: 70px;
+    bottom: 50px;
+    font-size: 1rem;
+  }
+
+  .reviews-desc p {
+    position: relative;
+    bottom: 25px;
+  }
+
+  .pink-text {
+    color: hsl(333, 80%, 67%);
+    font-weight: 400;
+  }
+
+  .reviews-rated  img {
+    float: left;
+    padding: 4px;
+  }
+
+  @media only screen and (max-width: 600px) {
+
+    .container {
+      justify-items: center;
+      padding-top: 60px;
+    }
+
+    h1 {
+      width: initial;
+      font-size: initial;
+      font-size: 2.4rem;
+      width: 250px;
+      text-align: center;
+      line-height: 30px;
+    }
+
+    .reviews-rated {
+      justify-content: initial;
+      position: initial;
+      bottom: initial;
+      margin-bottom: 150px;
+    }
+
+    .reviews-desc {
+      grid-template-columns: initial;
+      display: initial;
+    }
+
+    .container > p {
+      width: 330px;
+      text-align: center;
+    }
+
+    .review-rated-1 {
+      position: initial;
+      right: initial;
+      width: 330px;
+      height: 80px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 35px;
+    }
+
+    .review-rated-2 {
+      position: initial;
+      right: initial;
+      width: 330px;
+      height: 80px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .review-rated-3 {
+      position: initial;
+      right: initial;
+      width: 330px;
+      height: 80px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .reviews-rated img {
+      position: relative;
+      left: 90px;
+    }
+
+    .review-rated-p {
+      left: inherit;
+      top: 30px;
+      right: 60px;
+      width: 400px;
+    }
+
+    .review-desc-1 {
+      font-size: 1.1rem;
+      height: 270px;
+    }
+
+    .review-desc-2 {
+      font-size: 1.1rem;
+      height: 270px;
+    }
+
+    .review-desc-3 {
+      font-size: 1.1rem;
+      height: 270px;
+    }
+  }
